@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Question 1</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container">
+          <Label>Enter first String: </Label>
+          <input type="text" name="" id="input1">
+          <br>
+          <Label>Enter Second String: </Label>
+          <input type="text" name="" id="input2">
+          <br>
+          <button class="btn-primary" onclick="concatenate()">Concatenate</button>
+          <h2 id="result">Result: </h2>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <script>
+        function concatenate(){
+            var input1 = document.getElementById("input1").value;
+            var input2 = document.getElementById("input2").value;
+            var result = document.getElementById("result");
+
+            result.innerText = "Result: " + (input1+input2);
+        }
+    </script>
+  </body>
+</html>

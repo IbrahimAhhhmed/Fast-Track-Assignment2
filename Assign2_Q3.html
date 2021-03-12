@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Question 3</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+    <div class="container">
+        <h3> Search from the following array. </h3>
+        <h3> [ 0, 0, 1, 1, 1, 2 ] </h3>
+        <input type="text" name="" id="input">
+
+        <button class="btn-primary" onclick="findAllOccurences()">Search</button>
+        <h4 id="result"></h4>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script>
+
+        function findAllOccurences(){
+            var input = document.getElementById("input").value;
+            var result = document.getElementById("result");
+            var array = [ 0, 0, 1, 1, 1, 2 ];
+            var count = 0;
+            for(var i=0; i<array.length; i++){
+                if(input == array[i]){
+                    count +=1;
+                }
+            }
+            result.innerText = ""+input +" has occured "+count+" times.";
+        }
+    </script>
+  </body>
+</html>
